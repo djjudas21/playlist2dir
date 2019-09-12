@@ -12,9 +12,6 @@ GetOptions (
 	"p|playlist=s" => \$playlist
 );
 
-# FOR TESTING
-$remote = '/home/jonathan/Downloads/sdtest/';
-
 if (!($remote && $playlist)) {
 	print "Usage:\n";
 	print "\t-r | --remote    Destination path to copy music to\n";
