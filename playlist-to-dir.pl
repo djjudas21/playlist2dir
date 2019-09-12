@@ -14,8 +14,8 @@ GetOptions (
 
 if (!($remote && $playlist)) {
 	print "Usage:\n";
-	print "\t-r | --remote    Destination path to copy music to\n";
-	print "\t-p | --playlist  Path to M3U playlist\n";
+	print "  -r --remote      Destination path to copy music to\n";
+	print "  -p --playlist    Path to M3U playlist\n";
 	exit;
 }
 
