@@ -1,6 +1,6 @@
 # m3usync
 
-This script sync the contents of an m3u playlist to a target directory.
+This script syncs the contents of an m3u playlist to a target directory.
 
 The intended usage is to use your PC's music library/player to generate a playlist with a subset of that music that you
 want to copy to another device, e.g. a USB stick or SD card for use in a car stereo, etc.
