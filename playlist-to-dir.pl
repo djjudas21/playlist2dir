@@ -89,7 +89,7 @@ if (!-d $remote) {
 	exit;
 }
 
-my @log = `rsync -rauv --delete --delete-excluded  --include='*.mp3' --include='*.jpg' --include-from=/tmp/rsyncfilter --exclude=/** "$local" "$remote"`;
+my @log = `rsync -rauvm --delete --delete-excluded  --include='*.mp3' --include='*.jpg' --include-from=/tmp/rsyncfilter --exclude=/** "$local" "$remote"`;
 unlink '/tmp/rsyncfilter';
 foreach (@log) {
 	print;
