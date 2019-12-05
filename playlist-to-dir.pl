@@ -33,9 +33,11 @@ while(<M3U>) {
 	chomp;
 	my $file = $_;
 
-	# The M3U playlist contents relative paths to the MP3 from its own location
-	# So we prepend the dir of the M3U to get an absolute path to the MP3
-	if ( -e "$pldir/$file" ) {
+	# The M3U playlist may contain absolute or relative paths to the MP3 from its own location
+	# So we test and try to prepend the dir of the M3U to get an absolute path to the MP3
+	if ( -e "$file" ) {
+		push @files, "$file";
+	} elsif ( -e "$pldir/$file" ) {
 		push @files, "$pldir/$file";
 	}
 }
