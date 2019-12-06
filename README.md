@@ -1,4 +1,4 @@
-# m3usync
+# playlist2dir
 
 This script syncs the contents of an m3u playlist to a target directory.
 
